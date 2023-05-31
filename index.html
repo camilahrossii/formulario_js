@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <h1>Formulário com Validação em JS</h1>
+    <form id="form">
+        <label for="name">Nome: </label>
+        <input type="text" id="name">
+        <div id="name-error" class="error">Nome é obrigatório.</div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <div id="email-error" class="error">Por favor, preencha seu email corretamente.</div>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password">
+        <div id="password-error" class="error">A senha deve ter no mínimo 8 digitos.</div>
+
+        <label for="job">Situação de Trabalho:</label>
+        <select name="job" id="job">
+            <option value="">Está buscando emprego?</option>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+        </select>
+        <div id="jobselect-error" class="error">Assinale a sua situação.</div>
+
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div id="msg-error" class="error">Por favor, escreva sua mensagem.</div>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
